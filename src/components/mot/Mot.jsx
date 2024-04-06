@@ -52,7 +52,7 @@ export const Mot = ({bonneLettre}) => {
     return (
         <div className="container">
             {displayedWord ? (
-                <p>Mot retourné par l'API : {displayedWord}</p>
+                <p className="mot"><strong>{displayedWord}</strong></p>
             ) : (
                 <p>Chargement...</p>
             )}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./lettres.css";
 
 export const Lettres = ({ setIncorrectGuessCount, setbonneLettre }) => {
     const [disabledButtons, setDisabledButtons] = useState([]);
@@ -27,7 +28,7 @@ export const Lettres = ({ setIncorrectGuessCount, setbonneLettre }) => {
     };
 
     return (
-        <div>
+        <div className='container-lettres'>
             <h2>Sélectionnez une lettre :</h2>
             <form>
                 <div>

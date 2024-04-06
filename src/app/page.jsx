@@ -16,9 +16,9 @@ const Home = () => {
 
     return (
         <div>
+            <Dessin incorrectGuessCount={incorrectGuessCount} />
             <Mot bonneLettre={bonneLettre} />
             <Lettres setIncorrectGuessCount={setIncorrectGuessCount} setbonneLettre={setbonneLettre} />
-            <Dessin incorrectGuessCount={incorrectGuessCount} />
         </div>
     );
 };

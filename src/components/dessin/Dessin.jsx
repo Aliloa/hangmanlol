@@ -1,12 +1,12 @@
 import React from 'react';
+import "./dessin.css";
 
 export const Dessin = ({ incorrectGuessCount }) => {
     return (
         <div>
-            <h2>Sélectionnez une lettre :</h2>
             <form>
-                <div>
-                    Erreur number {incorrectGuessCount}
+                <div className='container'>
+                    <img src={`${incorrectGuessCount}.png`} alt="" />
                 </div>
             </form>
         </div>

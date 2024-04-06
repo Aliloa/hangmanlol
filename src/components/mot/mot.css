@@ -1,0 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+
+strong {
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5vw;
+    text-align: center;
+}
+
+.mot {
+    display: flex;
+    justify-content: center;
+}
