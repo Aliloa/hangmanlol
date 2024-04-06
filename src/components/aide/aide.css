@@ -1,0 +1,54 @@
+.popup-aide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.53);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    display: none;
+}
+
+.contenu {
+    width: 60%;
+    height: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.popup-aide button {
+    min-width: fit-content;
+}
+
+.indice {
+    position: fixed;
+    top: 5px;
+    right: 10px;
+}
+.indice img {
+    width: 40px;
+    margin: 0;
+}
+.indice button {
+    background-color: transparent;
+    border: none;
+    background-image: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 3px;
+    margin: 0;
+}
+
+.indice button:hover {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 0px 0px #ffffff;
+}
+.contenu p {
+    max-width: 90%;
+}

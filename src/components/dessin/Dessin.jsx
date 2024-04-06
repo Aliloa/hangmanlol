@@ -5,7 +5,7 @@ export const Dessin = ({ incorrectGuessCount }) => {
     return (
         <div>
             <form>
-                <div className='container'>
+                <div className='container dessin'>
                     <img src={`${incorrectGuessCount}.png`} alt="" />
                 </div>
             </form>

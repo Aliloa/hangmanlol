@@ -14,3 +14,15 @@ strong {
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width: 768px) {
+    strong {
+        font-size: 10vw;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    strong {
+        font-size: 15vw;
+    }
+}

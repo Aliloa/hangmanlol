@@ -5,19 +5,23 @@ import Link from "next/link";
 
 const API = "https://node-hangman-api-production.up.railway.app/";
 
-export const Mot = ({bonneLettre}) => {
+export const Mot = ({bonneLettre, setVictoire}) => {
     const [displayedWord, setDisplayedWord] = useState(null);
 
     const sendRequest = async () => {
         try {
-            const requestBody = {
-                // Ajoute les paramètres de la requête POST ici
-            };
 
+            const requestBody = new URLSearchParams();
+
+            const langue = localStorage.getItem('langue');
+            if (langue) {
+                requestBody.append('locale', langue);
+            }
+            
             const requestOptions = {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(requestBody)
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: requestBody
             };
 
             const res = await fetch(API, requestOptions);
@@ -46,6 +50,9 @@ export const Mot = ({bonneLettre}) => {
                 return char;
             }).join('');
             setDisplayedWord(newDisplayedWord);
+            if (newDisplayedWord === wordInStorage) {
+                setVictoire(true);
+            }
         }
     }, [bonneLettre, displayedWord]);
 

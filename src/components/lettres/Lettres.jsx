@@ -29,11 +29,8 @@ export const Lettres = ({ setIncorrectGuessCount, setbonneLettre }) => {
 
     return (
         <div className='container-lettres'>
-            <h2>Sélectionnez une lettre :</h2>
             <form>
-                <div>
                     {renderAlphabetButtons()}
-                </div>
             </form>
         </div>
     );

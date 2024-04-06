@@ -37,3 +37,16 @@ button {
     opacity: 0.5;
     cursor: not-allowed;
 }
+
+.container-lettres form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .container-lettres {
+    width: 60%;
+  }
+}
